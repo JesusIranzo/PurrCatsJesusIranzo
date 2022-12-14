@@ -1,0 +1,26 @@
+@media (min-width:701px) {
+    .section1 {
+        .gatosMas {
+            .curiosity {
+                .paragraph {
+                    display: flex;
+                    flex-direction: row;
+                    img{
+                        width:25%;
+                        height:25% ;
+                        padding-right: 20px;
+                    }
+                }
+                .paragraph2{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    img{
+                        width:25% ;
+                        height: 25%;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

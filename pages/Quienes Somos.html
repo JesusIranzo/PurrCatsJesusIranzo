@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shorcut icon" href="../assets/logo.png">
+  <!-- KeyWords -->
+<meta name="keywords" content="PurrCats, quienes son, quienes trabajan en PurrCats, fundadores de PurrCats.">
+<!-- Description -->
+<meta name="description" content="Bienvenidos a PurrCats = Quienes Somos, aqui presentamos una pequeña parte de la ffamilia PurrCats, aqui estamos conocenos.">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/36015ac274.js" crossorigin="anonymous"></script>
+  <title>PurrCats = Quienes Somos</title>
+</head>
+
+<body>
+  <div class="gridContainer">
+<!-- AlpineJS para gestionar el evento Clic -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<!-- Header -->
+<header x-data="{ open: false }" class="header">
+  <!-- Logo -->
+  <div class="header__logo">
+   <a href="../index.html"><img src="../assets/logo.png" alt="Logo PurrCats"></a>
+  </div>
+  <a class="title" href="../index.html"><h1 class="h1">PurrCats</h1></a>
+  <!-- Boton abrir -->
+  <button class="header__button-nav--open" x-on:click="open = true"> ☰ </button>
+  <!-- Navegador -->
+  <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+    <!-- Boton cerrar -->
+    <div class="nav__button" x-on:click="open = false">
+      <button class="header__button-nav--close">☰ </button>
+    </div>
+    <!-- Menu -->
+    <ul class="nav__ul">
+      <li class="nav__item"><a href="./Adopta.html" class="nav__link">Adopta</a></li>
+      <li class="nav__item"><a href="./Gatos y Mas.html" class="nav__link">Gatos y Más</a></li>
+      <li class="nav__item"><a href="./Comida Para Gatos.html" class="nav__link">Comida para Gatos</a></li>
+      <li class="nav__item"><a href="./Quienes Somos.html" class="nav__link">Quienes Somos</a></li>
+    </ul>
+  </nav>
+  <!-- Fin Navegador -->
+</header>
+<!-- Fin Header --> 
+<div class="seo">
+  <a href="./Quienes Somos.html">Quienes Somos</a>
+  <p>=</p><a href="../index.html">PurrCats</a>
+</div>
+    <section class="section1">
+      <div class="quienSoy">
+        <h3>PurrCats aqui estamos</h3>
+        <h4>Jesus Iranzo</h4>
+        <img src="../assets/Foto.jpg" alt="YO">
+        <p>Mucho gusto! espero disfruten de la pagina, me llamo Jesus Iranzo, creador de PurrCats.
+          Tenemos un total de 10 trabajadores, hasta el momento solo trabajamos con una empresa asociada que es purina,
+          gracias a ellos podemos ofrecer los productos y a traves de las ventas mantener el lugar para cuidar a los gatos que tenemos en nuestro local.
+          ¡Muchas gracias por pasarte y espero que quieras regresar!
+        </p>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="quienSoy">
+        <h4>Libertad</h4>
+        <img src="../assets/LIBERTAD.jpg" alt="Mi Gata">
+        <p>Esta es mi gata, Libertad, la reina de mi corazon, es la que me da animos todos los dias para seguir adelante con este proyecto, es todo un amor, ya lleva 4años conmigo y la verdad la quiero con toda el alma.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <span>
+          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </span>
+        <span>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </span>
+        <span>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </span>
+        <div class="contact">
+          <h6 class="text-uppercase">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Lara, BQTO 3001, VE</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>iranzo.quintana@gamil.com</p>
+          <p><i class="fas fa-phone me-3"></i> +58 4145706030</p>
+          <p><i class="fas fa-print me-3"></i> +58 4145007837</p>
+        </div>
+      </div>
+      <div class="copy">
+        <h6>© 2021 Copyright:</h6>
+        <a href="#">PurrCats.com</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

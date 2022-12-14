@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- KeyWords -->
+<meta name="keywords" content="PurrCats, gatos, felinos, saber mas sobre los gatos, historia de los gatos, anatomia de los gatos">
+<!-- Description -->
+<meta name="description" content="Bienvenidos a PurrCats = Gato y Mas, aqui podremos contarte algunas curiosidades que no sabias sobre los gatos, tambien un poco de su anatomia.">
+  <link rel="shorcut icon" href="../assets/logo.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/36015ac274.js" crossorigin="anonymous"></script>
+  <title>PurrCats = Gatos y Más</title>
+</head>
+
+<body>
+  <div class="gridContainer">
+    <!-- AlpineJS para gestionar el evento Clic -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Header -->
+    <header x-data="{ open: false }" class="header">
+      <!-- Logo -->
+      <div class="header__logo">
+        <a href="../index.html"><img src="../assets/logo.png" alt="Logo PurrCats"></a>
+      </div>
+      <a class="title" href="../index.html">
+        <h1 class="h1">PurrCats</h1>
+      </a>
+      <!-- Boton abrir -->
+      <button class="header__button-nav--open" x-on:click="open = true"> ☰ </button>
+      <!-- Navegador -->
+      <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+        <!-- Boton cerrar -->
+        <div class="nav__button" x-on:click="open = false">
+          <button class="header__button-nav--close">☰ </button>
+        </div>
+        <!-- Menu -->
+        <ul class="nav__ul">
+          <li class="nav__item"><a href="./Adopta.html" class="nav__link">Adopta</a></li>
+          <li class="nav__item"><a href="./Gatos y Mas.html" class="nav__link">Gatos y Más</a></li>
+          <li class="nav__item"><a href="./Comida Para Gatos.html" class="nav__link">Comida para Gatos</a></li>
+          <li class="nav__item"><a href="./Quienes Somos.html" class="nav__link">Quienes Somos</a></li>
+        </ul>
+      </nav>
+      <!-- Fin Navegador -->
+    </header>
+    <!-- Fin Header -->
+    <div class="seo">
+      <a href="./Gatos y Mas.html">Gatos y Más</a>
+      <p>=</p><a href="../index.html">PurrCats</a>
+    </div>
+    <section class="section1">
+      <div class="gatosMas">
+        <div class="losH">
+          <h2>Cosas curiosas sobre los gatos</h2>
+          <h3>Felis Silvestris catus</h3>
+        </div>
+        <div class="curiosity">
+          <div class="paragraph">
+            <p>El gato doméstico (Felis silvestris catus), llamado más comúnmente gato, y de forma coloquial minino,
+              michino, michi, micho, mizo, miz, morroño o morrongo, y algunos nombres más, es un mamífero carnívoro de
+              la
+              familia Felidae. Es una subespecie domesticada, por la convivencia con el ser humano, del gato montés.</p>
+            <img src="../assets/Gatos historia.jpg" alt="Gatos">
+          </div>
+          <div class="paragraph2">
+            <p>El nombre actual en muchas lenguas proviene del latín vulgar catus. Paradójicamente, catus aludía al
+              gatos
+              salvajes, mientras que los gatos domésticos eran llamados felis.
+
+              Como resultado de mutaciones genéticas, cruzamiento y selección artificial, hay numerosas razas. Algunas,
+              como la raza sphynx o la peterbald están desprovistas de pelo; otras carecen de cola, como los gatos de la
+              raza bobtail o la manx, y algunas tienen coloraciones atípicas, como los llamados gatos azules.</p>
+            <img src="../assets/Gato historia.jpg" alt="Gato egipcio">
+          </div>
+          <div class="curiosity">
+            <div class="paragraph">
+              <p>El gato se comunica a través de vocalizaciones. Las más populares son su característico maullido y el
+                ronroneo, pero puede aullar, gemir, gruñir y bufar. Además, adopta poses o expresiones que informan, a
+                sus
+                congéneres, sus enemigos o sus cuidadores, de su ánimo o sus intenciones.
+
+                Junto con el perro, es el animal doméstico más popular, como mascota, como ayuda en la lucha contra
+                roedores
+                o ambas cosas.</p>
+                <img src="../assets/Gato mirada.jpg" alt="La mirada de un gato">
+            </div>
+            <div class="paragraph2">
+              <p>Por su amplio abanico de presas potenciales, por su alta eficiencia como depredador, y por su elevado
+                éxito
+                reproductivo —especialmente si se suministra artificialmente alimento a las colonias sin tomar medidas
+                adicionales para limitar su fertilidad— el gato doméstico está incluido en la lista de las cien especies
+                exóticas invasoras más dañinas del mundo de la Unión Internacional para la Conservación de la
+                Naturaleza.
+              </p>
+              <img src="../assets/Gatitos.jpg" alt="Gatos">
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="section2">
+      <div class="anatomia">
+        <h4>Caracteristicas</h4>
+        <h5>Tamaño</h5>
+        <p>Miden alrededor de 46 cm de longitud de la cabeza al cuerpo y entre 23-25 cm de altura; generalmente poseen
+          una cola de unos 30 cm de largo (salvo mutaciones/malformaciones o razas como el Bobtail o el Manx).
+
+          Los machos son más grandes que las hembras.
+
+          El gato doméstico tiene un cráneo más pequeño y huesos más cortos que el gato montés europeo.</p>
+        <img src="../assets/Anatomia de los Gatos.jpg" alt="Anatomia de los gatos">
+        <h5>Peso</h5>
+        <p>Generalmente pesan entre 2,5 y 7 kg; sin embargo, algunas razas como el Ragdoll y el Maine Coon pueden
+          exceder los 11,3 kilogramos. Han existido casos que superaron los 23 kg de peso debido a la
+          sobrealimentación.16​ El sobrepeso es perjudicial para el animal y debe ser evitado a través de una dieta
+          equilibrada y ejercicio físico, especialmente en aquellos ejemplares exclusivamente hogareños</p>
+        <img src="../assets/Gato Gordito.jpg" alt="Gato Gordito">
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <span>
+          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </span>
+        <span>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </span>
+        <span>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </span>
+        <div class="contact">
+          <h6 class="text-uppercase">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Lara, BQTO 3001, VE</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>iranzo.quintana@gamil.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +58 4145706030</p>
+          <p><i class="fas fa-print me-3"></i> +58 4145007837</p>
+        </div>
+      </div>
+      <div class="copy">
+        <h6>© 2021 Copyright:</h6>
+        <a href="#">PurrCats.com</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

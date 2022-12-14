@@ -1,0 +1,27 @@
+@media(min-width:700px) {
+    .section1 {
+        .comida {
+            .cards3 {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .section2 {
+        .bottom {
+            .juguetes {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .cats1 {
+                    img {
+                        width: 40vw;
+                        height: 60vh;
+                    }
+                }
+            }
+        }
+    }
+}

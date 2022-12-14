@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- KeyWords -->
+<meta name="keywords" content="PurrCats, comida, comida para gatos, juguetes para gatos, food">
+<!-- Description -->
+<meta name="description" content="Bienvenidos a PurrCats = Comida, aqui tenemos de la mejor comida para sus michis y tambien ofrecemos algunos juguetes.">
+  <link rel="shorcut icon" href="../assets/logo.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/36015ac274.js" crossorigin="anonymous"></script>
+  <title>PurrCats = Comida para Gatos</title>
+</head>
+
+<body>
+  <div class="gridContainer">
+    <!-- AlpineJS para gestionar el evento Clic -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Header -->
+    <header x-data="{ open: false }" class="header">
+      <!-- Logo -->
+      <div class="header__logo">
+        <a href="../index.html"><img src="../assets/logo.png" alt="Logo PurrCats"></a>
+      </div>
+      <a class="title" href="../index.html">
+        <h1 class="h1">PurrCats</h1>
+      </a>
+      <!-- Boton abrir -->
+      <button class="header__button-nav--open" x-on:click="open = true"> ☰ </button>
+      <!-- Navegador -->
+      <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+        <!-- Boton cerrar -->
+        <div class="nav__button" x-on:click="open = false">
+          <button class="header__button-nav--close">☰ </button>
+        </div>
+        <!-- Menu -->
+        <ul class="nav__ul">
+          <li class="nav__item"><a href="./Adopta.html" class="nav__link">Adopta</a></li>
+          <li class="nav__item"><a href="./Gatos y Mas.html" class="nav__link">Gatos y Más</a></li>
+          <li class="nav__item"><a href="./Comida Para Gatos.html" class="nav__link">Comida para Gatos</a></li>
+          <li class="nav__item"><a href="./Quienes Somos.html" class="nav__link">Quienes Somos</a></li>
+        </ul>
+      </nav>
+      <!-- Fin Navegador -->
+    </header>
+    <!-- Fin Header -->
+    <div class="seo">
+      <a href="./Comida Para Gatos.html">Comida Para Gatos</a>
+      <p>=</p><a href="../index.html">PurrCats</a>
+    </div>
+    <section class="section1">
+      <div class="comida">
+        <h2>Compra la comida que necesites para tus michis</h2>
+        <div class="cards3">
+          <div class="cats1">
+            <h3>Comida Para Gatos</h3>
+            <img src="../assets/Mirringo-gaticos.jpg" alt="Gatarina">
+            <div class="subCat">
+              <h4>Mirringo Gaticos</h4>
+              <div class="shop">
+                <ul>
+                  <li>1k = 1.5$</li>
+                  <li> 5k = 6.5$</li>
+                  <li> 8k = 9.5$</li>
+                </ul>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+          <div class="cats1">
+            <h3>Comida Para Gatos</h3>
+            <img src="../assets/Gatsy.jpg" alt="Gatarina">
+            <div class="subCat">
+              <h4>Gatsy</h4>
+              <div class="shop">
+                <ul>
+                  <li>1k = 1$</li>
+                  <li>5k = 5$</li>
+                  <li>8k = 8$</li>
+                </ul>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+          <div class="cats1">
+            <h3>Comida Para Gatos</h3>
+            <img src="../assets/Purina-gaticos.jpg" alt="Gatarina">
+            <div class="subCat">
+              <h4>Purina Gaticos</h4>
+              <div>
+                <ul class="shop">
+                  <li>1k = 2$</li>
+                  <li> 5k = 10$</li>
+                  <li> 8k= 16$</li>
+                </ul>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="cards3">
+          <div class="cats1">
+            <h3>Comida Para Gatos</h3>
+            <img src="../assets/Purina-Friskies.jpg" alt="Gatarina">
+            <div class="subCat">
+              <h4>Purina Friskies</h4>
+              <div>
+                <ul class="shop">
+                  <li>1k = 2$</li>
+                  <li> 5k = 10$</li>
+                  <li> 8k= 16$</li>
+                </ul>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+          <div class="cats1">
+            <h3>Comida Para Gatos</h3>
+            <img src="../assets/Gatarina-IAMS.jpg" alt="Gatarina">
+            <div class="subCat">
+              <h4>Gatarina IAMS</h4>
+              <div class="shop">
+                <ul>
+                  <li>1k = 1$</li>
+                  <li>5k = 5$</li>
+                  <li>8k = 8$</li>
+                </ul>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+          <div class="cats1">
+            <h3>Comida Para Gatos</h3>
+            <img src="../assets/Gatarina.jpg" alt="Gatarina">
+            <div class="subCat">
+              <h4>Gatarina Dalí</h4>
+              <div>
+                <div class="shop">
+                  <ul>
+                    <li>1k = 1.5$</li>
+                    <li> 5k = 6.5$</li>
+                    <li> 8k = 9.5$</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="bottom">
+        <h4>Juguetes</h4>
+        <div class="juguetes">
+          <div class="cats1">
+            <h3>Juguete para Gatos</h3>
+            <img src="../assets/raton.jpg" alt="juguete raton">
+            <div class="subCat">
+              <h4>Raton</h4>
+              <p>5$</p>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+          <div class="cats1">
+            <h3>Juguete para Gatos</h3>
+            <img src="../assets/Rascador.jpg" alt="Rascador">
+            <div class="subCat">
+              <h4>Rascador</h4>
+              <p>15$</p>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <span>
+          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </span>
+        <span>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </span>
+        <span>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </span>
+        <div class="contact">
+          <h6 class="text-uppercase">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Lara, BQTO 3001, VE</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>iranzo.quintana@gamil.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +58 4145706030</p>
+          <p><i class="fas fa-print me-3"></i> +58 4145007837</p>
+        </div>
+      </div>
+  <div class="copy">
+    <h6>© 2021 Copyright:</h6>
+    <a href="#">PurrCats.com</a>
+  </div>
+  </footer>
+  </div>
+</body>
+
+</html>

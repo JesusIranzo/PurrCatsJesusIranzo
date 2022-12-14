@@ -1,0 +1,21 @@
+.gridContainer {  display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "Header Header Header"
+      "Seo Seo Seo"
+      "Section1 Section1 Section1"
+      "Section2 Section2 Section2"
+      "Footer Footer Footer";
+  }
+  
+  .header { grid-area: Header; }
+
+  .seo {grid-area: Seo;}
+  
+  .section1 { grid-area: Section1; }
+  
+  .section2 { grid-area: Section2; }
+  
+  .footer { grid-area: Footer; }
+  

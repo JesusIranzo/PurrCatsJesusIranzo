@@ -1,0 +1,78 @@
+.footer {
+    @include media() {
+        @include flex(column, nowrap, center, center);
+        background-color: $blue;
+
+        .social {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            a {
+                padding: 15px;
+                color: $pink;
+                font-size: 2rem;
+            }
+        }
+
+        .copy {
+            @include flex(row, nowrap, center, center);
+            margin-bottom: 10px;
+
+            h6 {
+                font-size: 1rem;
+                color: $orange;
+                font-family: $paragraph;
+            }
+
+            a {
+                text-decoration: none;
+                color: $pink;
+                font-family: $paragraph;
+                font-size: 1rem;
+            }
+        }
+        .contact{
+            display: none;
+        }
+    }
+}
+
+@media (min-width:700px) {
+    .footer {
+        background-color: $blue;
+        .social{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            a {
+                padding: 15px;
+                color: $pink;
+                font-size: 2rem;
+            }
+            .contact{
+                color: $orange;
+                font-family: $paragraph;
+            }
+        }
+        .copy {
+            @include flex(row, nowrap, center, center);
+            margin-bottom: 10px;
+
+            h6 {
+                font-size: 1rem;
+                color: $orange;
+                font-family: $paragraph;
+            }
+
+            a {
+                text-decoration: none;
+                color: $pink;
+                font-family: $paragraph;
+                font-size: 1rem;
+            }
+        }
+    }
+}

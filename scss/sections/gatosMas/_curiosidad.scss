@@ -1,0 +1,106 @@
+.section1 {
+    .gatosMas {
+        background-color: $blue;
+
+        .losH {
+            h2 {
+                padding-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                font-family: $title;
+                color: $pink;
+            }
+
+            h3 {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                text-align: center;
+                font-family: $title;
+                color: $orange;
+            }
+        }
+
+        .curiosity {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .paragraph {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    padding: 40px;
+                    font-family: $paragraph;
+                    text-align: center;
+                    color: $orange;
+                }
+
+                img {
+                    margin-bottom: 20px;
+                    width: 70%;
+                    height: 60%;
+                }
+            }
+            .paragraph2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    padding: 40px;
+                    font-family: $paragraph;
+                    text-align: center;
+                    color: $orange;
+                }
+
+                img {
+                    margin-bottom: 20px;
+                    width: 70%;
+                    height: 60%;
+                }
+            }
+        }
+    }
+}
+
+.section2 {
+    .anatomia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $pink;
+
+        h4 {
+            padding-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: $title;
+            color: $blue;
+            font-size: 2rem;
+        }
+
+        h5 {
+            font-size: 1rem;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: $title;
+            color: $blue;
+        }
+
+        p {
+            padding: 40px;
+            font-family: $paragraph;
+            text-align: center;
+            color: $orange;
+        }
+
+        img {
+            width: 70%;
+            height: 60%;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import'./variables/mixin';
+@import'./variables/colors';
+@import'./variables/typo';
+@import'./variables/extend';
+
+@import'./layout/header';
+@import'./layout/footer';
+@import'./grids/gridsIndex';
+
+@import'./sections/index/mainIndex';
+@import'./sections/index/viewDesktop';
+
+
+@import'./sections/adopta/camada';
+@import'./sections/adopta/adoptDesktop';
+
+@import'./sections/gatosMas/curiosidad';
+@import'./sections/gatosMas/curiosiDesktop';
+
+@import'./sections/comida/comidas';
+@import'./sections/comida/comidaDesktop';
+
+@import'./sections/quiensoy/quienSoy';

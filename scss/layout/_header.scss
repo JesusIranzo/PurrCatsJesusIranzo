@@ -1,0 +1,148 @@
+/* Estilos comunes */
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: $blue;
+   padding: 1rem;
+   img{
+      width: 50px;
+      height: 50px;
+   }
+   button{
+      text-decoration: none;
+      background-color: $pink;
+      width:40px ;
+      height:40px;
+      border-radius: 5px;
+      line-height: 40px;
+      font-weight: 900;
+      text-align: center;
+      user-select: none;
+   }
+   .h1{
+      color: $orange;
+      font-weight: 400;
+      font-family: $title;
+   }
+   .title{
+    text-decoration: none;
+   }
+ }
+ 
+ /* Estilos móvil/celular */
+ @media all and (max-width: 700px) {
+ 
+   /* Oculta el nav en la parte izquiera */
+   .nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: $blue;
+     transform: translateX(-100vw);
+     transition: 0.5s;
+   }
+ 
+   /* Muestra el nav */
+   .nav--show {
+     transform: translateX(0);
+   }
+ 
+   .nav__button {
+     text-align: right;
+     margin: 1rem;
+   }
+ 
+   .nav__ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+   }
+
+   .nav__item{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+   }
+ 
+   .nav__link {
+     display: block;
+     padding: 10px;
+     font-size: 1.5rem;
+     font-family: $paragraph;
+     text-align: center;
+     text-decoration: none;
+     color: $orange;
+    border: 2px solid $pink;
+    border-radius: 5vh;
+    width: 50%;
+    background-image: linear-gradient(150deg, $orange, $blue, $pink);
+    background-size: 400% 300%;
+    animation: PurrPush 5s ease infinite;
+   }
+   @keyframes PurrPush {
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
+ }
+ 
+ /* Estilos Escritorio */
+ @media all and (min-width: 768px) {
+ 
+   /* Oculta botón de abrir o cerrar */
+   .nav__button,
+   .header__button-nav--open {
+      text-decoration: none;
+     display: none;
+   }
+ 
+   /* Adapta el nav en horizontal */
+   .nav__ul {
+     display: flex;
+     list-style: none;
+     padding: 0;
+   }
+ 
+   .nav__link {
+    border: 2px solid $blue;
+     display: block;
+     padding: 0.5rem;
+     text-decoration: none;
+     font-family: $paragraph;
+     text-align: center;
+     text-decoration: none;
+     color: $orange;
+     transition: 0.5s;
+   }
+ 
+   .nav__link:hover {
+    border:2px solid $pink;
+    border-radius: 5vh;
+    background-color: $pink;
+    transition: 0.5s;
+   }
+ }
+ @media (min-width:1024px){
+  .nav__link{
+    padding: 1rem;
+  }
+ }
+ @media (min-width:1440px){
+  .nav__link{
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+ }
+
+
+ 

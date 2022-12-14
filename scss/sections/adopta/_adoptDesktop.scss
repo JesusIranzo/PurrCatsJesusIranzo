@@ -1,0 +1,82 @@
+@media (min-width:701px) {
+    .section1 {
+        .boxCamada {
+            .cardsKitty{
+                display: flex;
+                flex-direction: row;
+                .side {
+                    .dataso{
+                    padding-right: 50px;
+                    font-size: 1rem;
+                    color: $blue;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .pick{
+                    display: flex;
+                    flex-direction: row;
+                }
+                }
+                .siames{
+                    margin-bottom: 20px;
+                }
+                .siberiano{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .section2{
+        .boxGatos{
+            @include flex(row, nowrap, center, center);
+        }
+        .boxGatos2{
+            @include flex(row, nowrap, center, center);
+            background-color: $pink;
+
+            p {
+                margin-top: 10px;
+                padding-left: 40px;
+                padding-right: 40px;
+                text-align: center;
+                font-family: $paragraph;
+                color: $orange;
+            }
+    
+            .adults {
+                @include flex(column, nowrap, center, center);
+                margin-bottom: 20px;
+    
+                a {
+                    margin-top: 10px;
+                    font-family: $paragraph;
+                    color: black;
+                    padding-top: 5px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 5px;
+                    border-radius: 5vh;
+                    text-decoration: none;
+                    background-image: linear-gradient(150deg, $orange, $blue, $pink);
+                    background-size: 400% 300%;
+                    animation: PurrPush 5s ease infinite;
+                }
+    
+                h4 {
+                    font-family: $title;
+                    color: $blue;
+                }
+    
+                h5 {
+                    font-family: $title;
+                    color: $blue;
+                }
+    
+                img {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.section1 {
+    .adopt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $pink;
+
+        h2 {
+            padding: 20px;
+            text-align: center;
+            font-family: $title;
+            color: $orange;
+        }
+
+        p {
+            text-align: center;
+            padding: 30px;
+            font-family: $paragraph;
+            color: $orange;
+        }
+    }
+
+    .boxCamada {
+        background-color: $orange;
+
+        .cardsKitty {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .siames {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .siberiano {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h4 {
+                color: $pink;
+                font-family: $title;
+            }
+
+            h5 {
+                color: $blue;
+                font-family: $paragraph;
+            }
+
+            img {
+                border-radius: 10px;
+                width: 70%;
+                height: 70%;
+            }
+        }
+
+        .side {
+            font-family: $paragraph;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+
+            }
+            .pick {
+                font-family: $paragraph;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+            }
+            li {
+                margin: 10px;
+            }
+            a {
+                color: black;
+                padding-top: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 5px;
+                border-radius: 5vh;
+                text-decoration: none;
+                background-image: linear-gradient(150deg, $orange, $blue, $pink);
+                background-size: 400% 300%;
+                animation: PurrPush 5s ease infinite;
+            }
+            @media (max-width:701px){
+                .dataso{
+                    display: none;
+                } 
+            }
+        }
+    }
+
+
+
+.section2 {
+    .boxGatos {
+        @include flex(column, nowrap, center, center);
+        background-color: $pink;
+
+        p {
+            margin-top: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: center;
+            font-family: $paragraph;
+            color: $orange;
+        }
+
+        .adults {
+            @include flex(column, nowrap, center, center);
+            margin-bottom: 20px;
+
+            a {
+                margin-top: 10px;
+                font-family: $paragraph;
+                color: black;
+                padding-top: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 5px;
+                border-radius: 5vh;
+                text-decoration: none;
+                background-image: linear-gradient(150deg, $orange, $blue, $pink);
+                background-size: 400% 300%;
+                animation: PurrPush 5s ease infinite;
+            }
+
+            h4 {
+                font-family: $title;
+                color: $blue;
+            }
+
+            h5 {
+                font-family: $title;
+                color: $blue;
+            }
+
+            img {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+    @media (max-width:701px){
+    .boxGatos2{
+        display: none;
+    }
+    }
+
+}

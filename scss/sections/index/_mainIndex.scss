@@ -1,0 +1,181 @@
+    .seo {
+        background-color: $orange;
+        color: $pink;
+        font-family: $title;
+        @include flex(row, nowrap, center, center);
+
+        a {
+            margin: 10px;
+            color: $pink;
+            text-decoration: none;
+        }
+    }
+
+    .section1 {
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(../../../assets/Fondo.png);
+            background-size: contain;
+
+            .entrada {
+                background-color: rgba(0, 0, 0, 0.589);
+
+                @media (max-width:701px) {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        display: none;
+                    }
+                }
+
+
+                h2 {
+                    padding: 10px;
+                    text-align: center;
+                    font-family: $title;
+                    background-image: linear-gradient(150deg, $orange, $blue, $orange);
+                    background-size: 500%;
+                    -webkit-background-clip: text;
+                    animation: entrada 5s linear infinite;
+                    color: transparent
+                }
+
+                p {
+                    padding: 30px;
+                    text-align: center;
+                    font-family: $paragraph;
+                    color: $orange;
+                }
+            }
+
+            @keyframes entrada {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            @media (max-width:701px) {
+                .cards2 {
+                    display: none;
+                }
+            }
+
+            .cats1 {
+                margin-top: 10px;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 10px;
+                background-color: $orange;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 2rem;
+
+                h3 {
+                    margin-top: 15px;
+                    text-align: center;
+                    font-family: $title;
+                    background-image: linear-gradient(150deg, $orange, $blue, $orange);
+                    background-size: 500%;
+                    -webkit-background-clip: text;
+                    animation: entrada 5s linear infinite;
+                    color: transparent
+                }
+
+                .subCat {
+                    font-family: $title;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+
+                    a {
+                        padding: 5px;
+                        font-family: $paragraph;
+                        text-decoration: none;
+                        border: 2px solid $blue;
+                        border-radius: 5vh;
+                        color: $pink;
+                        background-image: linear-gradient(150deg, $orange, $blue, $pink);
+                        background-size: 400% 300%;
+                        animation: PurrPush 5s ease infinite;
+                    }
+                }
+                h4 {
+                    margin-bottom: 10px;
+                }
+            }
+
+            img {
+                margin-top: 10px;
+                width: 70%;
+            }
+        }
+    }
+    
+
+
+    .section2 {
+
+        .box2 {
+            background-color: $pink;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            @media (max-width:701px) {
+                img {
+                    display: none;
+                }
+            }
+
+            h5 {
+                margin-top: 20px;
+                font-family: $title;
+                color: $orange;
+            }
+
+            p {
+                padding: 30px;
+                font-family: $paragraph;
+                color: $blue;
+            }
+
+            a {
+                padding: 10px;
+                font-family: $paragraph;
+                text-decoration: none;
+                border: 2px solid $orange;
+                border-radius: 5vh;
+                color: $orange;
+                background-image: linear-gradient(150deg, $orange, $blue, $pink);
+                background-size: 400% 300%;
+                animation: PurrPush 5s ease infinite;
+                margin-bottom: 20px;
+            }
+
+            @keyframes PurrPush {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+        }
+    }
